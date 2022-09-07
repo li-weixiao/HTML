@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.js"></script>
+</head>
+<body>
+
+<form action="#" method="post">
+  <p>
+    <span>用户名：</span><input type="text" id="username" name="username">
+  </p>
+  <p>
+      <span>密码：</span><input type="password" id="password" name="password">
+  </p>
+  <button type="button" onclick="check()">提交</button>
+</form>
+
+<script>
+  function check(){
+    var uname=document.getElementById('username');
+    var pwd=document.getElementById('password');
+    console.log(uname.value);
+    console.log(pwd.value);
+    pwd.value=md5(pwd.value);
+    console.log(pwd.value);
+  }
+</script>
+
+</body>
+</html>

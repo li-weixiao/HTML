@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="post">
+  <p>
+    <span>用户名：</span><input type="text" id="username" required>
+  </p>
+  <p>
+    <span>性别：</span>
+    <input type="radio" name="sex" value="man" id="boy">男
+    <input type="radio" name="sex" value="women" id="girl">女
+  </p>
+    <input type="submit">
+</form>
+<script>
+  var input_text = document.getElementById('username');
+  var boy_radio=document.getElementById('boy');
+  var girl_radio=document.getElementById('girl');
+<!--  得到输入框的值-->
+  input_text
+<!--  修改输入框的值-->
+  input_text.value='test'
+<!--  查看返回的值，true选中，false未选中-->
+  boy_radio.checked
+<!--  赋值-->
+  boy_radio.checked=true
+</script>
+
+</body>
+</html>
